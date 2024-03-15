@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( BeginScreen());
+  runApp(BeginScreen());
 }
 
 class BeginScreen extends StatelessWidget {
