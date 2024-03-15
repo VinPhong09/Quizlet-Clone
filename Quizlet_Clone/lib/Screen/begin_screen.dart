@@ -29,19 +29,19 @@ class _BeginPage extends State<BeginPage> {
   final List<Flashcard> flashcards = [
     Flashcard(
       imagePath: 'images/anh1.png',
-      description: 'ảnh 1',
+      description: 'Hơn 90% học sinh sử dụng Quizlet cho biết họ đã cải thiện được điểm số.',
     ),
     Flashcard(
       imagePath: 'images/anh2.png',
-      description: 'ảnh 2',
+      description: 'Tìm kiếm hàng triệu bộ thẻ ghi nhớ.',
     ),
     Flashcard(
-      imagePath: 'assets/image3.jpg',
-      description: 'ảnh 3',
+      imagePath: 'images/anh3.png',
+      description: 'Học bằng bốn cách khác nhau.',
     ),
     Flashcard(
-      imagePath: 'assets/image4.jpg',
-      description: 'ảnh 4',
+      imagePath: 'images/anh1.png',
+      description: 'Tùy chỉnh thẻ ghi nhớ theo nhu cầu của bạn.',
     ),
   ];
 
@@ -135,13 +135,13 @@ class FlashcardWidget extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(16.0),
+      margin: EdgeInsets.all(25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset(
             flashcard.imagePath,
-            height: 200,
+            height: 400,
             fit: BoxFit.cover,
           ),
           Padding(
