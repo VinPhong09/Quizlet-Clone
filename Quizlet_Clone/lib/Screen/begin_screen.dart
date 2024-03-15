@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:quizlet_clone/login_form.dart';
+import 'package:quizlet_clone/register_form.dart';
 
 void main() {
   runApp(BeginScreen());
@@ -91,7 +93,10 @@ class _BeginPage extends State<BeginPage> {
               children: <Widget>[
                 ElevatedButton(
                   onPressed: () {
-
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegistrationForm()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.white, backgroundColor: Colors.deepPurple,
@@ -111,7 +116,10 @@ class _BeginPage extends State<BeginPage> {
 
                 GestureDetector(
                   onTap: () {
-
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => login_form()),
+                    );
                   },
                   child: const Text('Hoặc đăng nhập',
                     style: TextStyle(
@@ -136,21 +144,30 @@ class FlashcardWidget extends StatelessWidget{
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.all(25),
+      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Image.asset(
-            flashcard.imagePath,
-            height: 400,
-            fit: BoxFit.cover,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              flashcard.description,
-              style: TextStyle(fontSize: 16.0),
+          Container(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(50.0),
+              child: Image.asset(
+                flashcard.imagePath,
+                height: 300,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
+          const SizedBox(height: 100),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                flashcard.description,
+                style: TextStyle(fontSize: 16.0),
+              ),
+            ),
+          )
         ],
       ),
     );
