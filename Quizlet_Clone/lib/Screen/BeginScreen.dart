@@ -29,19 +29,19 @@ class _BeginPage extends State<BeginPage> {
   final List<Flashcard> flashcards = [
     Flashcard(
       imagePath: 'images/anh1.png',
-      description: 'Mô tả hình ảnh 1',
+      description: 'ảnh 1',
     ),
     Flashcard(
       imagePath: 'images/anh2.png',
-      description: 'Mô tả hình ảnh 2',
+      description: 'ảnh 2',
     ),
     Flashcard(
       imagePath: 'assets/image3.jpg',
-      description: 'Mô tả hình ảnh 3',
+      description: 'ảnh 3',
     ),
     Flashcard(
       imagePath: 'assets/image4.jpg',
-      description: 'Mô tả hình ảnh 4',
+      description: 'ảnh 4',
     ),
   ];
 
