@@ -113,7 +113,7 @@ class _BeginPage extends State<BeginPage> {
                   ),
                   child: const Text('Đăng ký miễn phí'),
                 ),
-
+                SizedBox(height: 20,),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -142,34 +142,38 @@ class FlashcardWidget extends StatelessWidget{
   FlashcardWidget({required this.flashcard});
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return Container(
       margin: EdgeInsets.all(25),
       color: Colors.white,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(50.0),
-              child: Image.asset(
-                flashcard.imagePath,
-                height: 300,
-                fit: BoxFit.cover,
+      child: Container(
+        color: Colors.white,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(50.0),
+                child: Image.asset(
+                  flashcard.imagePath,
+                  height: 300,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: 100),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                flashcard.description,
-                style: TextStyle(fontSize: 16.0),
+            const SizedBox(height: 100),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  flashcard.description,
+                  style: TextStyle(fontSize: 16.0),
+                ),
               ),
-            ),
-          )
-        ],
-      ),
+            )
+          ],
+        ),
+      )
+
     );
   }
 }
