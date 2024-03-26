@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:quizlet_clone/MyLibrary.dart';
+import 'package:quizlet_clone/my_library.dart';
 
-class MyHomePage extends StatefulWidget {
+class my_home_page extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  my_home_pageState createState() => my_home_pageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class my_home_pageState extends State<my_home_page> {
   int _currentIndex = 0;
 
   final List<Widget> _children = [
     Center(child: Text('Trang chủ')),
     Center(child: Text('Lời giải')),
     Center(child: Text('Add')),
-    MyLibrary(),
+    my_library(),
     Center(child: Text('Hồ sơ')),
   ];
 

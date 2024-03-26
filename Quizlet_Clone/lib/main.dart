@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizlet_clone/MyHomePage.dart';
+import 'package:quizlet_clone/search_home.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: MyHomePage(),
+        body: search_home(),
       ),
     );
   }

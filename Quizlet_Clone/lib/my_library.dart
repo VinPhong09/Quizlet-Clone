@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MyLibrary extends StatefulWidget {
+class my_library extends StatefulWidget {
   @override
-  _MyLibraryState createState() => _MyLibraryState();
+  _my_libraryState createState() => _my_libraryState();
 }
 
-class _MyLibraryState extends State<MyLibrary>
+class _my_libraryState extends State<my_library>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -46,9 +46,7 @@ class _MyLibraryState extends State<MyLibrary>
             controller: _tabController,
             labelColor: Colors.black,
             tabs: [
-              Tab(
-                text: 'Học phần',
-              ),
+              Tab(text: 'Học phần'),
               Tab(text: 'Lớp học'),
               Tab(text: 'Thư mục'),
             ],
