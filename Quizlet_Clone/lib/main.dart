@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizlet_clone/MyHomePage.dart';
+import 'package:quizlet_clone/my_home_page.dart';
 import 'package:quizlet_clone/search_home.dart';
 
 void main() {
